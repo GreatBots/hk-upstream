@@ -772,7 +772,7 @@ def set_priority(id_):
 
 @app.route('/')
 def homepage():
-    return "<img src="https://graph.org/file/50c059441247c12c76242.jpg" width=250 height=150>"
+    return "<img src='https://graph.org/file/50c059441247c12c76242.jpg' width=250 height=150>"
     
 @app.errorhandler(Exception)
 def page_not_found(e):
