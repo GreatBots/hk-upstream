@@ -130,11 +130,12 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton(f"{config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
-    buttons.buildbutton(f"{config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
+    buttons.buildbutton(f"Master", f"vi_bio.t.me")
+    buttons.buildbutton(f"Group", f"t.me/mirror_leech_XD")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''This bot can mirror all your links to Google Drive!
+
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         if config_dict['PICS']:
@@ -178,7 +179,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://github.com/weebzone/WZML'>WeebZone</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
+<b>Here are the available commands to this bot.</b>\n\nCheck Out This 👇
 Choose a help category:
 '''
 
@@ -251,7 +252,6 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.SpeedCommand[0]}</b>: Speedtest of server
 <br><br>
-• <b>/weebhelp</b>: Okatu helper
 '''
 
 help_user = telegraph.create_page(
