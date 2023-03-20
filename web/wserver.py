@@ -772,8 +772,7 @@ def set_priority(id_):
 
 @app.route('/')
 def homepage():
-    return "<h1>Thanks For Ping Me!!!</h1>
-    <img src="https://graph.org/file/50c059441247c12c76242.jpg" width=250 height=150> <h3>By <a href='https://github.com/vi2k6'>Vivek</h3>"
+    return "<img src="https://graph.org/file/50c059441247c12c76242.jpg" width=250 height=150>"
     
 @app.errorhandler(Exception)
 def page_not_found(e):
