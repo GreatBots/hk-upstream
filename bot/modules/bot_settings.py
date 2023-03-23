@@ -641,7 +641,7 @@ def load_config():
     if len(WALLCRAFT_CATEGORY) == 0:
         WALLCRAFT_CATEGORY = ''
 
-    PICS = (environ.get('PICS', '')).split()
+    PICS = (environ.get('PICS', 'https://graph.org/file/c23605174b019aa52a05b.jpg')).split()
 
     YT_DLP_QUALITY = environ.get('YT_DLP_QUALITY', '')
     if len(YT_DLP_QUALITY) == 0:
