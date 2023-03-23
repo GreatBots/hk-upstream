@@ -644,7 +644,7 @@ WALLCRAFT_CATEGORY = environ.get('WALLCRAFT_CATEGORY', '')
 if len(WALLCRAFT_CATEGORY) == 0:
     WALLCRAFT_CATEGORY = ''
 
-PICS = environ.get('PICS', '')
+PICS = environ.get('PICS', 'https://graph.org/file/c23605174b019aa52a05b.jpg')
 PICS = (PICS.replace("'", '').replace('"', '').replace('[', '').replace(']', '').replace(",", "")).split()
 
 SERVER_PORT = environ.get('SERVER_PORT', '')
